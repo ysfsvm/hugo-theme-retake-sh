@@ -1,0 +1,13 @@
+.video-container {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.video-container video {
+    width: 100%;
+    border: 8px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 0;
+    max-height: 600px;
+    background: color-mix(in srgb, var(--foreground) 5%, transparent);
+}
