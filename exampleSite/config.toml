@@ -17,7 +17,7 @@ pagination.pagerSize = 5
     title = "Terminal"
     subtitle = "A simple, retro theme for Hugo"
     keywords = ""
-    copyright = ""
+    copyright = "<span style='color: var(--accent);'>retake</span> :: Hayat kaosla dans etme sanatıdır"
     menuMore = "Show more"
     readMore = "Read more"
     readOtherPosts = "Read other posts"
