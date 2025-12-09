@@ -2,7 +2,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin: 20px 1px;
+  margin: 0;
 }
 
 .navigation-menu__inner {
@@ -14,13 +14,13 @@
   padding: 0;
 }
 
-.navigation-menu__inner > li {
+.navigation-menu__inner>li {
   flex: 0 0 auto;
   margin-bottom: 10px;
   white-space: nowrap;
 }
 
-.navigation-menu__inner > li:not(:last-of-type) {
+.navigation-menu__inner>li:not(:last-of-type) {
   margin-right: 20px;
 }
 
@@ -64,15 +64,15 @@
   display: flex;
 }
 
-.menu__dropdown > li {
+.menu__dropdown>li {
   flex: 0 0 auto;
 }
 
-.menu__dropdown > li:not(:last-of-type) {
+.menu__dropdown>li:not(:last-of-type) {
   margin-bottom: 10px;
 }
 
-.menu__dropdown > li a {
+.menu__dropdown>li a {
   display: flex;
   padding: 5px;
 }

@@ -163,11 +163,9 @@ select:active {
 }
 
 select {
-  background-image: linear-gradient(
-    45deg,
-    transparent 50%,
-    var(--foreground) 50%
-  ),
+  background-image: linear-gradient(45deg,
+      transparent 50%,
+      var(--foreground) 50%),
     linear-gradient(135deg, var(--foreground) 50%, transparent 50%);
   background-position: calc(100% - 20px), calc(100% - 1em);
   background-size:
@@ -407,12 +405,12 @@ hr {
   margin: 20px 0;
 }
 
-.headings--one-size ~ h1:first-child,
-.headings--one-size ~ h2:first-child,
-.headings--one-size ~ h3:first-child,
-.headings--one-size ~ h4:first-child,
-.headings--one-size ~ h5:first-child,
-.headings--one-size ~ h6:first-child {
+.headings--one-size~h1:first-child,
+.headings--one-size~h2:first-child,
+.headings--one-size~h3:first-child,
+.headings--one-size~h4:first-child,
+.headings--one-size~h5:first-child,
+.headings--one-size~h6:first-child {
   margin-top: 20px;
 }
 
@@ -448,7 +446,8 @@ blockquote.twitter-tweet::before {
   border-right: 1px solid color-mix(in srgb, var(--accent) 10%, transparent);
 }
 
-.container.full, .container.center {
+.container.full,
+.container.center {
   border: none;
   margin: 0 auto;
 }

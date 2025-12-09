@@ -4,13 +4,13 @@
       {{ partial "logo.html" . }}
     </div>
     {{ if len $.Site.Menus }}
-      {{ partial "mobile-menu.html" . }}
+    {{ partial "mobile-menu.html" . }}
     {{ end }}
     {{ if and $.Site.Params.showLanguageSelector (len $.Site.Home.AllTranslations) }}
-      {{ partial "language-menu.html" . }}
+    {{ partial "language-menu.html" . }}
+    {{ end }}
+    {{ if len $.Site.Menus }}
+    {{ partial "menu.html" . }}
     {{ end }}
   </div>
-  {{ if len $.Site.Menus }}
-    {{ partial "menu.html" . }}
-  {{ end }}
 </header>
