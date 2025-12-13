@@ -1,6 +1,6 @@
 :root {
-  --background: #1a170f;
-  --foreground: #eceae5;
+  --background: #161616;
+  --foreground: #f0f0f0;
   --accent: #d55fde;
   --font-size: 1rem;
   --line-height: 1.54em;
@@ -26,8 +26,8 @@ body {
   line-height: var(--line-height);
   background-color: var(--background);
   color: var(--foreground);
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
   -webkit-overflow-scrolling: touch;
   text-size-adjust: 100%;
 }
