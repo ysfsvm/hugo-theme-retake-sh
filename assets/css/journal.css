@@ -1,0 +1,43 @@
+/* Journal Layout Styles */
+.journal-content .day-entry {
+    margin: 1rem 0;
+    border: none;
+    border-left: 2px solid var(--accent);
+}
+
+.journal-content .day-header {
+    background: none;
+    color: var(--foreground);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+    font-weight: normal;
+    border-bottom: 1px dashed color-mix(in srgb, var(--foreground) 20%, transparent);
+    transition: background 0.15s ease;
+}
+
+.journal-content .day-header:hover {
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+.journal-content .day-header::before {
+    content: "[+] ";
+    margin-right: 0.25rem;
+    color: var(--accent);
+}
+
+.journal-content .day-header.active::before {
+    content: "[-] ";
+}
+
+.journal-content .day-content {
+    display: none;
+    padding: 1rem;
+    padding-left: 2rem;
+    border-left: 1px solid color-mix(in srgb, var(--foreground) 20%, transparent);
+    margin-left: 1rem;
+}
+
+.journal-content .day-content.active {
+    display: block;
+}
