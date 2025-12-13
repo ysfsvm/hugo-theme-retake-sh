@@ -4,48 +4,47 @@ This is a customized fork of the [Terminal](https://github.com/panr/hugo-theme-t
 
 ## Customizations
 
-### Homepage Layout
-- **Year Grouping:** Posts are automatically grouped by year on the homepage.
-- **Year Box:** Distinctive, outlined "Year Box" styling (e.g., `[ 2025 ]`).
-- **List Style:** Clean, dense post list with `DD/MM/YYYY` date format and right-aligned, clickable tags.
-- **Filtering:** Automatically filters to show only content type `posts` on the homepage.
+### Layouts & Features
 
-### UI/UX Improvements
-- **Width:** Container max-width increased to `1400px` for a wider, modern look.
-- **Spacing:** Tighter, more compact list spacing (`padding: 0`, `line-height: 1.35`).
-- **Header:**
-  - Menu items aligned inline with the logo.
-  - "More" menu limit increased to `10` items.
-  - Decorative dashed lines removed for a cleaner aesthetic.
-- **Footer:**
-  - Configurable dynamic footer text via `config.toml`.
-- **Typography:** Updated font sizes and colors to match the specific "retake.sh" aesthetic.
+#### Journal Layout
+A dedicated layout for daily logs or updates, featuring a grouped, collapsible list of entries.
+- **Usage:** Set `layout: "journal"` in your content frontmatter.
+- **Structure:** Automatically groups content by month/year.
+- **Interactive:** Entries are collapsible upon clicking the day header.
+- **Styling:** Clean, terminal-like aesthetic with distinct day highlighting.
 
-### Custom Shortcodes
+#### Sticky Table of Contents (TOC)
+A redesigned, smart Table of Contents for single posts.
+- **Positioning:**
+  - **Desktop (>1350px):** Sticky sidebar on the right, floating *outside* the main content area for a distraction-free reading experience.
+  - **Mobile/Tablet:** Standard inline TOC at the top of the post.
+- **Features:**
+  - **Auto-Highlighting:** The active section highlights as you scroll.
+  - **Auto-Scroll:** The TOC sidebar automatically scrolls to keep the active link in view.
+  - **Clean Look:** Hidden scrollbars, truncated long titles (2 lines), and removed clutter (dashes/backgrounds).
 
-#### `video`
-Embeds an HTML5 video with consistent styling (borders, accent color).
-```html
-{{< video "https://path/to/video.mp4" >}}
-```
+### Homepage
+- **Year Grouping:** Posts are automatically grouped by year with a distinctive "Year Box" outline (e.g., `[ 2025 ]`).
+- **Compact Styling:** Dense list with `DD/MM/YYYY` date format and aligned tags.
+- **Isolation:** CSS is properly namespaced (`home-posts`, `home-date`) to prevent style collisions with other pages.
 
-#### `blur`
-Adds a blur effect to text (spoiler/CTF flags), revealing it on hover/click.
-```html
-{{< blur "Hidden Flag Content" >}}
-```
+### Visual Refinements
+- **Typography:** Enforced `subpixel-antialiased` for crisper text rendering on Linux/High-DPI screens.
+- **Colors:** Tuned `--background` (`#161616`) and `--foreground` (`#f0f0f0`) for a deeper, more neutral terminal look.
+- **Code Blocks:** Cleaned up weird background artifacts in TOC code snippets.
 
 ## Configuration
 
+### Footer Text
 Add the following to your `config.toml` to utilize the custom footer:
 
 ```toml
 [params]
   copyright = "<span style='color: var(--accent);'>retake</span> :: Hayat kaosla dans etme sanatıdır"
-
-[markup.highlight]
-  noClasses = false # Essential for custom syntax highlighting colors
 ```
+
+### Journal Configuration
+No extra config needed, just use the `layout: "journal"` frontmatter.
 
 ## Credits
 
