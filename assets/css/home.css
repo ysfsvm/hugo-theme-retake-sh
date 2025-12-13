@@ -35,13 +35,13 @@
     font-size: 1rem;
 }
 
-.post-title {
+.home-post-title {
     border-bottom: none !important;
     margin: 0 !important;
     padding: 0 !important;
 }
 
-.post-title::after {
+.home-post-title::after {
     display: none !important;
     content: none !important;
 }
@@ -62,7 +62,7 @@
     display: inline-block;
 }
 
-.post-title a {
+.home-post-title a {
     text-decoration: none;
     color: var(--foreground);
     border: none !important;
@@ -72,7 +72,7 @@
     display: inline-block;
 }
 
-.post-title a:hover {
+.home-post-title a:hover {
     text-decoration: none;
     color: var(--accent);
     background: none !important;
