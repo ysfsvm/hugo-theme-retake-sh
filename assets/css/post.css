@@ -33,12 +33,16 @@
   font-size: inherit;
   margin-bottom: 10px;
   color: color-mix(in srgb, var(--foreground) 65%, transparent);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.post-meta > *:not(:first-child)::before {
+.post-meta>*:not(:first-child)::before {
   content: "::";
   display: inline-block;
-  margin: 0 8px;
+  margin: 0 10px;
+  /* Consistent spacing around separator */
 }
 
 .post-title {
@@ -103,7 +107,7 @@
   margin-bottom: 10px;
 }
 
-.post--regulation h2 + h2 {
+.post--regulation h2+h2 {
   margin-top: -10px;
   margin-bottom: 20px;
 }
