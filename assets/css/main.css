@@ -192,9 +192,9 @@ input[type="checkbox"]:checked {
 img {
   display: block;
   max-width: 100%;
-  border: 8px solid var(--accent);
-  border-radius: var(--radius);
-  padding: 8px;
+  border: 4px solid color-mix(in srgb, var(--accent) 70%, transparent);
+  border-radius: 6px;
+  padding: 2px;
   overflow: hidden;
 }
 
@@ -494,8 +494,9 @@ blockquote.twitter-tweet::before {
 }
 
 iframe[src*="youtube.com"] {
-  border: 8px solid var(--accent) !important;
-  padding: 8px !important;
+  border: 4px solid color-mix(in srgb, var(--accent) 70%, transparent) !important;
+  border-radius: 6px !important;
+  padding: 2px !important;
 }
 
 @media (max-width: 684px) {
